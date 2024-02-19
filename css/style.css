@@ -4,6 +4,12 @@
      --text:  #B6B6B6;
      --hover: #F38181;
  }
+ .container {
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  
+ }
   body {
     font-family: "Montserrat", sans-serif;
     font-size:14px ;
@@ -17,10 +23,26 @@
   a {
    text-decoration: none;
   }
+ ul, h2,p,a,h4,h3, button {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+padding-top: 17px;
+padding-bottom: 81px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+  }
   .logo {
     color:var(--main-accent);
 font-size: 30px;
 font-weight: 700;
+  }
+  .nav-list {
+    display: flex;
+    gap: 55px;
   }
 .nav-list-link {
   color: #95E1D3;
@@ -28,38 +50,81 @@ font-weight: 700;
 .nav-list-link:hover {
   color:  #F38181;
 }
-.team-info {
+.nav-list-link:hover::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--hover);
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.services {
+  
+  padding: 63px, 0;
+}
+.services_title::after, .our-team-title::after{
+  content: "";
+  display: block;
+  width: 60px;
+}
+
+.services-info {
   color:var(--title);
 font-family: "Kaushan Script", cursive ;
 font-size: 24px;
 text-align: center;
 
 }
-.team-info2 {
+.services-info2 {
   color:var(--title);
   font-size: 30px;
   text-align: center;
   font-variant: all-small-caps;
 }
- .team-list-title {
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 126px;
+  justify-content: center;
+}
+ .services-list-title {
   color: #333;
    text-align: center;
 font-variant: small-caps;
+margin-top: 109px;
+margin-bottom: 20px;
  }
-.team-list-text {
+ .services-item {
+  width: 275px;
+ }
+.services-list-text {
   color: var(--text);
 font-family: "Roboto", sans-serif;
  text-align: center;
 font-size: 15px;
 line-height: 1.5px;
+margin-bottom: 100px;
 }
-.our-team-info {
+.our-team {
+  
+  padding: 42px , 0 80px;
+  
+}
+.our-team-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.our-team-title {
   color: #333;
 font-family: "Kaushan Script" ,cursive;
 font-size: 24px;
  text-align: center;
+ margin-bottom: 17px;
 }
-.our-team-info2 {
+.our-team-text{
   color:var(--title);
 font-size: 30px;
 font-weight: 700;
@@ -77,6 +142,7 @@ font-weight: 400;
   color:var(--title);
 text-align: center;
 font-variant: all-small-caps;
+margin-bottom: 11px;
 }
 .our-team-list-description {
   color:var(--text);
@@ -85,6 +151,17 @@ font-family: "Roboto", sans-serif;
 font-size: 15px;
 font-style: italic;
 font-weight: 300;
+margin-bottom: 11px;
+}
+.our-team-image{
+  
+  margin-bottom: 30px;
+  width: 380px;
+}
+.footer{
+  outline: 2px solid black;
+  padding-top: 9px;
+  padding-bottom: 10px;
 }
  .footer-form-description {
   color:var(--title);
@@ -100,6 +177,7 @@ text-align: center;
 font-family: "Roboto", sans-serif;
 font-style: italic;
 font-weight: 300;
+padding: 12px 10px 11px;
 
  }
  .button {
